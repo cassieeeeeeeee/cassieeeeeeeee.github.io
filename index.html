@@ -28,31 +28,30 @@
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- animated aurora backdrop (decorative) -->
-  <div class="aurora" aria-hidden="true">
-    <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
-  </div>
-  <div class="grain" aria-hidden="true"></div>
+  <!-- purple ripples backdrop (Unicorn Studio, hue-shifted + slowed + non-interactive) -->
+  <div class="bg-ripples" aria-hidden="true"><div data-us-project="qF3qXhdiOxdUeQYH8wCK"></div></div>
 
   <main id="main">
     <!-- ============ QUICK-JUMP NAV ============ -->
     <nav class="pillnav" aria-label="Jump to section">
       <a href="#about">About</a>
-      <a href="#work">Projects</a>
       <a href="#experience">Education</a>
+      <a href="#work">Projects</a>
       <a href="#skills">Skills</a>
     </nav>
 
     <!-- ============ HERO ============ -->
     <section class="hero" id="top">
       <div class="container hero-inner reveal">
-        <div class="hero-avatar">
-          <img src="headshot.jpg" alt="Portrait of Caitlyn Sherman" width="150" height="150"
-               loading="eager" decoding="async"
-               onerror="this.closest('.hero-avatar').style.display='none'" />
-        </div>
         <p class="pill"><span class="dot-live" aria-hidden="true"></span>Open to <b>&nbsp;entry-level SWE roles</b></p>
-        <h1 class="hero-name">Caitlyn<br /><span class="grad">Sherman</span></h1>
+        <div class="hero-head">
+          <div class="hero-avatar">
+            <img src="headshot.jpg" alt="Portrait of Caitlyn Sherman" width="150" height="150"
+                 loading="eager" decoding="async"
+                 onerror="this.closest('.hero-avatar').style.display='none'" />
+          </div>
+          <h1 class="hero-name">Caitlyn<br /><span class="grad">Sherman</span></h1>
+        </div>
         <p class="hero-tagline">Early-career software engineer building polished, user-facing apps.</p>
         <p class="hero-meta">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -93,6 +92,44 @@
         <div class="about-body">
           <p>I'm an early-career software engineer who loves turning ideas into fast, accessible products people actually enjoy using. I'm self-directed, and I taught myself React Native to design and ship <a href="https://github.com/cassieeeeeeeee/open-when" target="_blank" rel="noopener noreferrer">Open&nbsp;When</a> end&#8209;to&#8209;end, from its hand-built design system down to a typed Firestore data layer.</p>
           <p>I recently earned my B.S. in Computer Science (Software Engineering) from Florida Polytechnic University, and I'm currently seeking an entry-level software engineering role where I can keep growing on a product team.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION & EXPERIENCE ============ -->
+    <section class="section" id="experience" aria-labelledby="exp-title">
+      <div class="container reveal">
+        <p class="eyebrow">// background</p>
+        <h2 class="section-title" id="exp-title">Education &amp; Experience</h2>
+        <div class="timeline">
+
+          <div class="tl-item">
+            <div class="tl-head">
+              <h3 class="tl-role">B.S. Computer Science <span class="tl-note">Software Engineering</span></h3>
+              <span class="tl-date">Class of 2026</span>
+            </div>
+            <p class="tl-org">Florida Polytechnic University · Lakeland, FL</p>
+            <p class="tl-desc">Upper-division CS GPA 3.5. Coursework across algorithms, operating systems, databases, software design, UI/UX, and machine learning. CCNA certified.</p>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-head">
+              <h3 class="tl-role">MIS Intern</h3>
+              <span class="tl-date">Summer 2025</span>
+            </div>
+            <p class="tl-org">Highlands County School Board · Highlands County, FL</p>
+            <p class="tl-desc">Configured, imaged, and inventory-tracked 800+ laptops for district-wide deployment, and resolved hardware and software issues to reduce end-user downtime.</p>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-head">
+              <h3 class="tl-role">Cashier &amp; Operations Volunteer</h3>
+              <span class="tl-date">2021 to 2022</span>
+            </div>
+            <p class="tl-org">Life's Treasures (nonprofit) · Tampa, FL</p>
+            <p class="tl-desc">Supported daily store operations and customer service for a Tampa-based nonprofit thrift store.</p>
+          </div>
+
         </div>
       </div>
     </section>
@@ -217,44 +254,6 @@
       </div>
     </section>
 
-    <!-- ============ EDUCATION & EXPERIENCE ============ -->
-    <section class="section" id="experience" aria-labelledby="exp-title">
-      <div class="container reveal">
-        <p class="eyebrow">// background</p>
-        <h2 class="section-title" id="exp-title">Education &amp; Experience</h2>
-        <div class="timeline">
-
-          <div class="tl-item">
-            <div class="tl-head">
-              <h3 class="tl-role">B.S. Computer Science <span class="tl-note">Software Engineering</span></h3>
-              <span class="tl-date">Class of 2026</span>
-            </div>
-            <p class="tl-org">Florida Polytechnic University · Lakeland, FL</p>
-            <p class="tl-desc">Upper-division CS GPA 3.5. Coursework across algorithms, operating systems, databases, software design, UI/UX, and machine learning. CCNA certified.</p>
-          </div>
-
-          <div class="tl-item">
-            <div class="tl-head">
-              <h3 class="tl-role">MIS Intern</h3>
-              <span class="tl-date">Summer 2025</span>
-            </div>
-            <p class="tl-org">Highlands County School Board · Highlands County, FL</p>
-            <p class="tl-desc">Configured, imaged, and inventory-tracked 800+ laptops for district-wide deployment, and resolved hardware and software issues to reduce end-user downtime.</p>
-          </div>
-
-          <div class="tl-item">
-            <div class="tl-head">
-              <h3 class="tl-role">Cashier &amp; Operations Volunteer</h3>
-              <span class="tl-date">2021 to 2022</span>
-            </div>
-            <p class="tl-org">Life's Treasures (nonprofit) · Tampa, FL</p>
-            <p class="tl-desc">Supported daily store operations and customer service for a Tampa-based nonprofit thrift store.</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
     <!-- ============ SKILLS ============ -->
     <section class="section" id="skills" aria-labelledby="skills-title">
       <div class="container reveal">
@@ -308,6 +307,24 @@
     </div>
   </footer>
 
+  <!-- Background controls: slow the ripples + block the effect's window-level cursor tracking
+       (scoped to window/document so the project cards' own tilt still works). Runs BEFORE the loader. -->
+  <script>
+    (function () {
+      var f = 0.4, t0 = performance.now(), oNow = performance.now.bind(performance);
+      performance.now = function () { return t0 + (oNow() - t0) * f; };
+      var oRAF = window.requestAnimationFrame.bind(window);
+      window.requestAnimationFrame = function (cb) { return oRAF(function (ts) { cb(t0 + (ts - t0) * f); }); };
+      var block = { mousemove: 1, pointermove: 1, touchmove: 1, mouseenter: 1, pointerenter: 1 };
+      [window, Document.prototype].forEach(function (o) {
+        var orig = o.addEventListener;
+        o.addEventListener = function (t, l, p) { if (block[t]) return; return orig.call(this, t, l, p); };
+      });
+    })();
+  </script>
+  <script type="text/javascript">
+    !function(){if(!window.UnicornStudio){window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.29/dist/unicornStudio.umd.js",i.onload=function(){window.UnicornStudio.isInitialized||(UnicornStudio.init(),window.UnicornStudio.isInitialized=!0)},(document.head || document.body).appendChild(i)}}();
+  </script>
   <script src="script.js" defer></script>
 </body>
 </html>
